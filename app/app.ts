@@ -1,11 +1,15 @@
-import express = require('express');
+import express, { Application } from 'express';
+import bodyParser from 'body-parser';
+
+import routes from './routes';
+import { loggerMiddleware } from './middlewares/loggers';
 
 // Create a new express application instance
-const app: express.Application = express();
-app.get('/', function (req, res) {
-  res.send('Hello World!');
-});
+const app: Application = express();
 
-app.listen(3000, function () {
-  console.log('Example app listening on port 3000!');
-});
+app.use(bodyParser.json());
+app.use(loggerMiddleware);
+
+routes(app);
+
+export = app;
