@@ -3,7 +3,7 @@
   "host": "35.237.52.82",
   "port": 5432,
   "username": "postgres",
-  "password": "182grO6rHc66I1xP",
+  "password": "xxxxxxxx",
   "database": "placesAround",
   "synchronize": true,
   "logging": false,
