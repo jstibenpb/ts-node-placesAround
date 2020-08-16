@@ -1,6 +1,6 @@
+import "reflect-metadata";
 import express, { Application } from 'express';
 import bodyParser from 'body-parser';
-
 import routes from './routes';
 import { loggerMiddleware } from './middlewares/loggers';
 
@@ -12,4 +12,4 @@ app.use(loggerMiddleware);
 
 routes(app);
 
-export = app;
+export default app;

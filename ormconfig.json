@@ -1,0 +1,19 @@
+{
+  "type": "postgres",
+  "host": "35.237.52.82",
+  "port": 5432,
+  "username": "postgres",
+  "password": "182grO6rHc66I1xP",
+  "database": "placesAround",
+  "synchronize": true,
+  "logging": false,
+  "entities": [
+     "src/entity/**/*.ts"
+  ],
+  "migrations": [
+     "src/migration/**/*.ts"
+  ],
+  "subscribers": [
+     "src/subscriber/**/*.ts"
+  ]
+}

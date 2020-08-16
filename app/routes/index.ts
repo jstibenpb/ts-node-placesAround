@@ -11,4 +11,4 @@ function routes (app: Application): void {
   });
 };
 
-export = routes;
+export default routes;
